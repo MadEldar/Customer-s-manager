@@ -30,15 +30,4 @@ public class CustomerEntity {
         this.phone = phone;
         this.gender = gender;
     }
-
-    @Override
-    public String toString() {
-        return "CustomerEntity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", gender='" + gender + '\'' +
-                '}';
-    }
 }

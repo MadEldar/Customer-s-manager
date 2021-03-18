@@ -55,11 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             );
         }
 
-        for (CustomerEntity customer :
-                db.customerDao().getAllCustomer()) {
-            Log.d("Debug", customer.toString());
-        }
-
         btAddCustomer.setOnClickListener(this);
         btSearchCustomer.setOnClickListener(this);
     }
@@ -78,7 +73,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 etPhone.getText().toString(),
                 radio.getText().toString()
                 );
-        Log.d("Debug", customer.toString());
         db.customerDao().insertCustomer(customer);
     }
 
@@ -86,13 +80,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return et.getText().toString().equals("");
     }
 
+    private void getCustomerList() {
+
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btAddCustomer:
-                Log.d("Debug", "clicked");
                 addCustomer();
                 break;
+            case R.id.btSearchCustomer:
+                getCustomerList();
             default:
                 break;
         }
