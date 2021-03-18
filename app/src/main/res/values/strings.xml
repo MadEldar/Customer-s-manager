@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_2021_03_18</string>
+    <string name="title_sqlite">Using SQLite!</string>
+    <string name="field_name">Customer name</string>
+    <string name="field_email">Email address</string>
+    <string name="field_phone">Phone number</string>
+    <string name="button_addCustomer">Add customer</string>
+    <string name="button_searchCustomer">Search customer</string>
+</resources>
