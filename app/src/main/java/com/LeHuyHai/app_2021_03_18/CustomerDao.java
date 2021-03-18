@@ -20,6 +20,9 @@ public interface CustomerDao {
     @Query("select * from Customer where id = :id")
     CustomerEntity getCustomerById(int id);
 
+    @Query("select * from Customer where name like :name")
+    List<CustomerEntity> getCustomerByName(String name);
+
     @Query("select * from Customer")
     List<CustomerEntity> getAllCustomer();
 

@@ -6,4 +6,7 @@
     <string name="field_phone">Phone number</string>
     <string name="button_addCustomer">Add customer</string>
     <string name="button_searchCustomer">Search customer</string>
+    <string name="field_gender">Gender</string>
+    <string name="bt_search">Search</string>
+    <string name="input_search_by_name">Search by name</string>
 </resources>

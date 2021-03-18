@@ -2,6 +2,7 @@ package com.LeHuyHai.app_2021_03_18;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void getCustomerList() {
-
+        Intent intent = new Intent(this, CustomerListActivity.class);
+        startActivity(intent);
     }
 
     @Override
